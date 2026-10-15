@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiwi 的深夜书房</title>
+  <style>@font-face{font-family:Brush;src:url(./fonts/brush.woff)format("woff");font-display:block}@font-face{font-family:XiaoWei;src:url(./fonts/xiaowei.woff)format("woff");font-display:block}@font-face{font-family:Caveat;src:url(./fonts/caveat.woff)format("woff");font-display:block}@font-face{font-family:Fell;src:url(./fonts/fell.woff)format("woff");font-display:block}@font-face{font-family:Elite;src:url(./fonts/elite.woff)format("woff");font-display:block}@font-face{font-family:Cinzel;src:url(./fonts/cinzel.woff)format("woff");font-display:block}:root{--ink:#f3e6c8;--dim:#f3e6c89e;--paper:#efe3c6}*{box-sizing:border-box}html,body{height:100%;color:var(--ink);background:#04050a;margin:0;font-family:XiaoWei,serif;overflow:hidden}#app canvas{cursor:grab;touch-action:none;display:block}#app canvas:active{cursor:grabbing}.ui{pointer-events:none;z-index:5;position:fixed}#title{top:22px;left:28px}#title h1{letter-spacing:2px;text-shadow:0 0 18px #ffbe6e59;margin:0;font:400 34px Brush,serif}#title p{color:var(--dim);letter-spacing:.5px;margin:2px 0 0 2px;font:15px Caveat,cursive}#hint{color:var(--dim);font-size:14px;line-height:1.8;bottom:22px;left:28px}#hint b{color:var(--ink);font-weight:400}#btns{pointer-events:auto;gap:10px;display:flex;top:22px;right:22px}#btns button{all:unset;cursor:pointer;background:#14100c8c;border:1px solid #f3dcaa40;border-radius:50%;place-items:center;width:40px;height:40px;font-size:18px;transition:all .25s;display:grid}#btns button:hover{background:#3c2814b3}#btns button.off{opacity:.45}#btns button.on{background:#5a3c19cc;border-color:#ffd28c99}#tip{background:var(--paper);color:#2a2018;opacity:0;white-space:nowrap;transform-origin:0 0;border-radius:2px;padding:5px 12px 6px;font:17px Brush,serif;transition:opacity .18s;top:0;left:0;box-shadow:0 3px 14px #00000073}#tip:before{content:"";width:8px;height:8px;box-shadow:0 0 0 2px var(--paper);background:#a3261d;border-radius:50%;position:absolute;top:9px;left:-5px}#tip.show{opacity:1}#toast{opacity:0;background:#120e0ac7;border:1px solid #f3dcaa40;border-radius:22px;padding:10px 22px;font-size:16px;transition:all .35s;bottom:34px;left:50%;transform:translate(-50%,16px)}#toast.show{opacity:1;transform:translate(-50%)}#toast b{color:#fff2d0;font:22px Cinzel,serif}#back{pointer-events:auto;cursor:pointer;opacity:0;visibility:hidden;background:#120e0ab3;border:1px solid #f3dcaa4d;border-radius:18px;padding:7px 18px;font-size:14px;transition:all .3s;top:22px;left:50%;transform:translate(-50%)}#back.show{opacity:1;visibility:visible}#letter{opacity:0;visibility:hidden;pointer-events:auto;cursor:pointer;z-index:8;background:#04050a8c;place-items:center;transition:all .4s;display:grid;inset:0}#letter.show{opacity:1;visibility:visible}#letter .sheet{color:#23304f;background:radial-gradient(120% 90% at 50% 40%,#f4ead2,#e3d1a8);width:min(480px,86vw);padding:38px 42px 34px;font:22px/1.75 Brush,serif;position:relative;transform:rotate(-1.5deg);box-shadow:0 20px 60px #0009}#letter .seal{color:#ffd2beb3;background:radial-gradient(circle at 40% 35%,#c8382c,#8a1813 70%);border-radius:50%;place-items:center;width:62px;height:62px;font:26px Cinzel,serif;display:grid;position:absolute;bottom:-18px;right:26px;box-shadow:0 4px 10px #0006}#letter .sign{text-align:right;margin-top:10px}#loading{z-index:10;pointer-events:auto;background:#04050a;place-items:center;transition:opacity .9s;display:grid;inset:0}#loading.done{opacity:0;pointer-events:none}#loading .box{text-align:center}#loading h2{color:#f3dcae;text-shadow:0 0 30px #ffaa5066;margin:0 0 6px;font:400 40px Brush,serif}#loading .sub{color:var(--dim);font:16px Caveat,cursive}#loading .track{background:#ffffff1a;width:220px;height:2px;margin:18px auto 0}#bar{background:linear-gradient(90deg,#ffb45a,#ffe2a8);width:0;height:100%;transition:width .3s;box-shadow:0 0 10px #ffb45a}body.capture .ui:not(#loading):not(#toast){display:none}@media (width<=700px){#hint{display:none}#title h1{font-size:26px}}</style>
+  <script type="module" crossorigin src="./js/index-CaWbeGxb.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="ui" id="title"><h1>Kiwi 的深夜书房</h1><p>a rainy night at the desk · one brass lamp, a street full of neon</p></div>
+  <div class="ui" id="hint">
+    <b>点台灯 / 拉灯绳</b> 开关（空格）　<b>点骰塔</b> 掷骰（R）　<b>点唱机</b> 放一张黑胶　<b>点窗</b> 看看窗外（O）<br />
+    <b>拖动 / ← →</b> 转头（右边是书架）　<b>点手册 / 便签 / 稿件 / 线索板 / 台历</b> 凑近看　<b>滚轮</b> 眯眼细看 · <b>V</b> 全景 / 坐回去 · Esc 返回
+  </div>
+  <div class="ui" id="btns"><button id="viewBtn" title="全景 / 坐回书桌前（V）">⤢</button><button id="lampBtn" title="台灯">💡</button><button id="soundBtn" title="声音">♪</button></div>
+  <div class="ui" id="tip"></div>
+  <div class="ui" id="toast"></div>
+  <div class="ui" id="back">← 坐回书桌前（Esc）</div>
+  <div class="ui" id="letter"><div class="sheet">
+    亲爱的守秘人：<br />
+    上次团里你说灯塔“只是灯塔”，我一整周都没睡好。<br />
+    周五我会准时到，带上姜饼和我那张快要发疯的角色卡。<br />
+    如果林遥这次还能活着回来——请让她先把那本日志读完。
+    <div class="sign">—— 你的调查员 · 林遥　十月十二日</div>
+    <div class="seal">K</div>
+  </div></div>
+  <div class="ui" id="loading"><div class="box"><h2>Kiwi 的深夜书房</h2><div class="sub">listening to the rain…</div><div class="track"><div id="bar"></div></div></div></div>
+  <script>if (new URLSearchParams(location.search).has('capture')) document.body.classList.add('capture');</script>
+</body>
+</html>
