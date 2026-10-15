@@ -1,0 +1,252 @@
+{
+ "version": 1,
+ "photo": "photo.jpg",
+ "bokeh": "bokeh.jpg",
+ "depth_map": "depth.png",
+ "size": [
+  2048,
+  1536
+ ],
+ "camera": {
+  "center": [
+   0.445,
+   0.583
+  ],
+  "k": [
+   1.7385734756324533,
+   1.30393010672434
+  ],
+  "height": 5.85,
+  "eye": [
+   0.0,
+   1.25,
+   0.4
+  ],
+  "hfov": 82
+ },
+ "depth": {
+  "near": 10.155256271362305,
+  "far": 3000.0,
+  "fit": {
+   "mode": "ground-plane fit",
+   "a": 46.33310541689612,
+   "b": 0.20538410093046455,
+   "r": 0.9994981191153797,
+   "pixels": 30135
+  }
+ },
+ "bokeh_radius": 0.011,
+ "grade": {
+  "exposure": 1.0,
+  "contrast": 1.2,
+  "wb": [
+   0.66,
+   0.74,
+   1.3
+  ],
+  "saturation": 1.3,
+  "hdr": [
+   0.95,
+   1.6
+  ],
+  "bokeh_hdr": 0.15
+ },
+ "parallax": {
+  "gain": 10.0,
+  "max": 1.2
+ },
+ "lanes": [
+  {
+   "name": "away-left",
+   "a": [
+    -1.916,
+    -5.85,
+    -11.023
+   ],
+   "b": [
+    34.06,
+    -5.85,
+    -299.096
+   ],
+   "cars": 7,
+   "speed": 12.0,
+   "front": 0.002,
+   "rear": 1.002,
+   "seed": 0.13,
+   "height": 0.7,
+   "z": [
+    11.0,
+    299.1
+   ]
+  },
+  {
+   "name": "away-mid",
+   "a": [
+    -0.287,
+    -5.85,
+    -11.023
+   ],
+   "b": [
+    35.88,
+    -5.85,
+    -299.096
+   ],
+   "cars": 6,
+   "speed": 14.0,
+   "front": 0.002,
+   "rear": 1.002,
+   "seed": 0.61,
+   "height": 0.7,
+   "z": [
+    11.0,
+    299.1
+   ]
+  },
+  {
+   "name": "towards",
+   "a": [
+    44.7,
+    -5.85,
+    -345.111
+   ],
+   "b": [
+    2.624,
+    -5.85,
+    -10.266
+   ],
+   "cars": 8,
+   "speed": 11.0,
+   "front": 1.002,
+   "rear": 0.002,
+   "seed": 0.37,
+   "height": 0.7,
+   "z": [
+    345.1,
+    10.3
+   ]
+  },
+  {
+   "name": "cross-far",
+   "a": [
+    -78.0,
+    -5.85,
+    -138.044
+   ],
+   "b": [
+    114.0,
+    -5.85,
+    -138.044
+   ],
+   "cars": 5,
+   "speed": 13.0,
+   "front": 0.8,
+   "rear": 0.8,
+   "seed": 0.82,
+   "height": 0.7,
+   "z": [
+    138.0,
+    138.0
+   ]
+  },
+  {
+   "name": "cross-back",
+   "a": [
+    122.379,
+    -5.85,
+    -154.705
+   ],
+   "b": [
+    -82.034,
+    -5.85,
+    -154.705
+   ],
+   "cars": 4,
+   "speed": 10.0,
+   "front": 0.8,
+   "rear": 0.8,
+   "seed": 0.29,
+   "height": 0.7,
+   "z": [
+    154.7,
+    154.7
+   ]
+  }
+ ],
+ "aircraft": {
+  "a": [
+   1542.98,
+   1085.52,
+   -2500.0
+  ],
+  "b": [
+   -1151.8,
+   889.93,
+   -2500.0
+  ],
+  "period": 30.0,
+  "phase": 0.25
+ },
+ "signs": [
+  {
+   "name": "PLC",
+   "rect": [
+    0.548,
+    0.553,
+    0.592,
+    0.595
+   ],
+   "mode": "stutter"
+  },
+  {
+   "name": "MULTI-LOCK",
+   "rect": [
+    0.585,
+    0.455,
+    0.695,
+    0.505
+   ],
+   "mode": "hum"
+  },
+  {
+   "name": "EZON",
+   "rect": [
+    0.59,
+    0.51,
+    0.691,
+    0.547
+   ],
+   "mode": "hum"
+  },
+  {
+   "name": "medeco",
+   "rect": [
+    0.59,
+    0.553,
+    0.692,
+    0.594
+   ],
+   "mode": "blink",
+   "period": 9.0
+  }
+ ],
+ "windows": {
+  "band": [
+   0.0,
+   0.47
+  ],
+  "toggle": 0.05,
+  "flicker": 0.012
+ },
+ "credit": {
+  "title": "Typhoon Koppu time",
+  "author": "John Seb Barber (from Leeds, UK)",
+  "author_url": "https://www.flickr.com/people/69875617@N00",
+  "source": "https://commons.wikimedia.org/wiki/File:Typhoon_Koppu_time_(6301978857).jpg",
+  "original": "https://www.flickr.com/photos/johnseb/6301978857/",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "date": "2009-09-14 23:27, Nathan Road, Mong Kok, Hong Kong",
+  "changes": "resized, colour-graded, blurred (bokeh copy), depth-estimated; animated lights, traffic and rain drawn over it at runtime"
+ },
+ "source": "assets/exterior/typhoon_koppu_time.jpg"
+}
